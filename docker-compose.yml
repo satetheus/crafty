@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+    mc:
+        image: itzg/minecraft-server
+        volumes:
+            - ~/crafty1/data:/data
+        environment:
+            EULA: "true"
+            TYPE: FORGE
+            VERSION: 1.14.4
+            ENABLE_RCON: "true"
+        ports:
+            - 25565:25565
+
+        tty: true
+
+        stdin_open: true
+
+        restart: always
+
+#docker run -d -e EULA=TRUE -p 25565:25565 -v /home/<user>/minecreft/demo_data:/data --name mc itzg/minecraft-server
