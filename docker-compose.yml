@@ -8,8 +8,8 @@ services:
         environment:
             EULA: "true"
             TYPE: FORGE
-            VERSION: 1.14.4
-            ENABLE_RCON: "true"
+            TYPE: CURSEFORGE
+            CF_SERVER_MOD: SevTech-Ages_Server_3.1.5.zip
         ports:
             - 25565:25565
 
