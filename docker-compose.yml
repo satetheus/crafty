@@ -7,7 +7,11 @@ services:
             - ~/crafty1/data:/data
         environment:
             EULA: "true"
-            TYPE: FORGE
+            MEMORY: "4G"
+            ENFORCE_WHITELIST: "true"
+            WHITELIST: "satetheus"
+            WHITELIST: "nightcraler123"
+            OPS: "satetheus"
             TYPE: CURSEFORGE
             CF_SERVER_MOD: SevTech-Ages_Server_3.1.5.zip
         ports:
@@ -19,4 +23,3 @@ services:
 
         restart: always
 
-#docker run -d -e EULA=TRUE -p 25565:25565 -v /home/<user>/minecreft/demo_data:/data --name mc itzg/minecraft-server
