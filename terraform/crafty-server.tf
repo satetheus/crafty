@@ -1,7 +1,7 @@
 resource "digitalocean_droplet" "minecraft_world" {
     image = "ubuntu-18-04-x64"
     name = "minecraftworld"
-    region = "nyc2"
+    region = "nyc1"
     size = "s-1vcpu-1gb"
     private_networking = true
     ssh_keys = [
